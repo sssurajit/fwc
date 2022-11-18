@@ -1,6 +1,3 @@
-
-
-
 #Python libraries for math and graphics
 import numpy as np
 import mpmath as mp
