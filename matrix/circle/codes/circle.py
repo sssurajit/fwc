@@ -1,6 +1,3 @@
-
-
-
 #Python libraries for math and graphics
 import numpy as np
 import mpmath as mp
@@ -8,7 +5,7 @@ import matplotlib.pyplot as plt
 from numpy import linalg as LA
 
 import sys                                          #for path to external scripts
-sys.path.insert(0,'/home/jeet/snap/curl/iith/')         #path to my scripts
+sys.path.insert(0,'/sdcard/IITH/matrix/code import/')         #path to my scripts
 
 #local imports
 from line.funcs import *
@@ -62,8 +59,8 @@ plt.axis('equal')
 
 
 #if using termux
-plt.savefig('/home/jeet/snap/curl/circle/circle.pdf')
-subprocess.run(shlex.split("xdg-open /home/jeet/snap/curl/circle/circle.pdf"))
+plt.savefig('/sdcard/IITH/matrix/circle/circle.pdf')
+subprocess.run(shlex.split("termux-open /sdcard/IITH/matrix/circle/circle.pdf"))
 #else
 plt.show()
 
