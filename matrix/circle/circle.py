@@ -4,8 +4,8 @@ import mpmath as mp
 import matplotlib.pyplot as plt
 from numpy import linalg as LA
 
-import sys                                          #for path to external scripts
-sys.path.insert(0,'/sdcard/IITH/matrix/code import/')         #path to my scripts
+import sys                                              #for path to external scripts
+sys.path.insert(0,'/sdcard/IITH/matrix/code import/')   #path to my scripts
 
 #local imports
 from line.funcs import *
@@ -45,11 +45,11 @@ tri_coords =u1.T
 plt.scatter(tri_coords[0],tri_coords[1])
 vert_labels = ['u1(0,0)']
 for i, txt in enumerate(vert_labels):
-    plt.annotate(txt, # this is the text
-                 (tri_coords[0],tri_coords[1]), # this is the point to label
-                 textcoords="offset points", # how to position the text
-                 xytext=(0,-15), # distance from text to points (x,y)
-                 ha='center') # horizontal alignment can be left, right or center
+    plt.annotate(txt,                            # this is the text
+                 (tri_coords[0],tri_coords[1]),  # this is the point to label
+                 textcoords="offset points",     # how to position the text
+                 xytext=(0,-15),                 # distance from text to points (x,y)
+                 ha='center')                    # horizontal alignment can be left, right or center
 
 plt.xlabel('$x$')
 plt.ylabel('$y$')
