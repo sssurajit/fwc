@@ -1,68 +1,91 @@
-#Python libraries for math and graphics
 import numpy as np
-import mpmath as mp
 import matplotlib.pyplot as plt
 from numpy import linalg as LA
-
-import sys                                          #for path to external scripts
-sys.path.insert(0,'/sdcard/IITH/matrix/code import/')         #path to my scripts
-
-#local imports
-from line.funcs import *
-from triangle.funcs import *
-from conics.funcs import circ_gen
-
-#if using termux
+import math
+import sympy as sp
+import sys  #for path to external scripts
 import subprocess
 import shlex
-#end if
+
+#local imports
+#from line.funcs import *
+#from triangle.funcs import *
+#from conics.funcs import circ_gen 
+
+#Generating points on a circle
+def circ_gen(O,r):
+  len = 100
+  theta = np.linspace(0,2*np.pi,len)
+  x_circ = np.zeros((2,len))
+  x_circ[0,:] = r*np.cos(theta)
+  x_circ[1,:] = r*np.sin(theta)
+  x_circ = (x_circ.T + O).T
+  return x_circ
+
 
 #Input parameters
-r = 2
-A = np.array(([0.5,2]))
+A = np.array(([3,7]))    #point(a) on circle1
+B = np.array(([6,5]))    #point(b) on circle1
+#Centre and radius of circle1
+u1 = np.array(([4.5,6]))
+u2 = np.array(([2,3]))
+u3 = np.array(([3.5,4.5]))
+u4 = np.array(([2.5,3]))
 
-n=np.array(([2,-1]))
-e1 = np.array(([1,0]))
 
-k1 = -2
-k2 = 2
-AB = line_dir_pt(n,A,k1,k2)
 
-#Centre and point 
-u1 =np.array(([0,0])) #Centre
-p=np.array(([0,2]))
-plt.plot(AB[0,:],AB[1,:],label='$locus $')
-##Generating the circle
-x_circ= circ_gen(u1,r)
-#Generating line
-x_up= line_gen(u1,p)
+plt.axline(A,B, color='gray', linestyle='--',label='$Locus$')
+
+#Computation of  radius of circle(1,2,3,4)
+r1 = LA.norm(u1-A)
+r2 = 4
+r3 = np.sqrt(6.5)
+#r4 = np.sqrt(16.25)
+
+#Generating the circle
+x_circ1= circ_gen(u1,r1) 
+x_circ2= circ_gen(u2,r2)
+x_circ3= circ_gen(u3,r3)
+#x_circ4= circ_gen(u4,r4)
+
+# use set_position
+ax = plt.gca()
+ax.spines['top'].set_color('none')
+ax.spines['left'].set_position('zero')
+ax.spines['right'].set_color('none')
+ax.spines['bottom'].set_position('zero')
+
+
 #Plotting the circle
-plt.plot(x_circ[0,:],x_circ[1,:],label='$Circle1$')
-plt.plot(x_up[0,:],x_up[1,:],label='$radius=2$')
+
+plt.plot(x_circ1[0,:],x_circ1[1,:],color='green',label='$Circle1$')
+plt.plot(x_circ2[0,:],x_circ2[1,:],color='red',label='$Circle2$')
+plt.plot(x_circ3[0,:],x_circ3[1,:],color='blue',label='$Circle3$')
+#plt.plot(x_circ4[0,:],x_circ3[1,:],color='orange',label='$Circle4$')
 
 #Labeling the coordinates
-tri_coords =u1.T
-plt.scatter(tri_coords[0],tri_coords[1])
-vert_labels = ['u1(0,0)']
+tri_coords = np.vstack((A,B,u1,u2,u3)).T
+plt.scatter(tri_coords[0,:], tri_coords[1,:])
+vert_labels = ['A(3,7)','B(6,5)','u1','u2','u3']
 for i, txt in enumerate(vert_labels):
     plt.annotate(txt, # this is the text
-                 (tri_coords[0],tri_coords[1]), # this is the point to label
-                 textcoords="offset points", # how to position the text
-                 xytext=(0,-15), # distance from text to points (x,y)
-                 ha='center') # horizontal alignment can be left, right or center
+            (tri_coords[0,i], tri_coords[1,i]), # this is the point to label
+            textcoords="offset points", # how to position the text
+            xytext=(0,10), # distance from text to points (x,y)
+            ha='center') # horizontal alignment can be left, right or center
 
-plt.xlabel('$x$')
-plt.ylabel('$y$')
-plt.legend(loc='best')
-plt.grid() # minor
+
+
+plt.xlabel('$ X $')
+plt.ylabel('$ Y $')
+plt.legend()
+plt.grid(True) # minor
 plt.axis('equal')
-
-
-#if using termux
+#plt.title('Locus of center of circle')
+plt.savefig('/sdcard/IITH/matrix/circle/circle/fig.jpg')
 plt.savefig('/sdcard/IITH/matrix/circle/circle.pdf')
 subprocess.run(shlex.split("termux-open /sdcard/IITH/matrix/circle/circle.pdf"))
-#else
-plt.show()
+#plt.show()
 
 
 
