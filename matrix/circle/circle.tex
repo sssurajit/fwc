@@ -69,6 +69,9 @@ Equation of $L_1$
 \begin{equation}
     \vec{n}^T{\myvec{\vec x-\vec A}}=0
 \end{equation}
+\begin{equation}
+    \vec {n^T x}-\vec {n^TA}=0
+\end{equation}
 Given circle
 \begin{equation}
     \vec{{x}^2+{y}^2}-4{\vec x}-6{\vec y}-3=0
@@ -102,23 +105,27 @@ Where\\ $c_1$ is circle having A and B as diameter\\
     \vec{\myvec{-5-6}}{\vec x}+56+\lambda L_1
 \end{equation}
 \begin{equation}
-    \vec{\myvec{5&6}}{\vec x}=56
+    \vec{\myvec{5&6}}{\vec x}=56  ---\myvec{L_2}
 \end{equation}
+Using python we get the $L_1$ and intersection point
 \begin{equation}
-    \vec{\myvec{2&3}}{\vec x}=27
+    \vec{\myvec{2&3}}{\vec x}=27 ---\myvec{L_1}
 \end{equation}
 \begin{equation}
     \vec{\myvec{5&6\\2&3}}{\vec x}={\myvec{56\\27}}
 \end{equation}
-\begin{equation}
-    \vec {A x= b}
-\end{equation}
-\begin{equation}
-    {\vec{x={A}}^{-1} {\vec b}}
-\end{equation}
+%\begin{equation}
+%    \vec {A x= b}
+%\end{equation}
+%\begin{equation}
+%    {\vec{x={A}}^{-1} {\vec b}}
+%\end{equation}
 \begin{equation}
     \vec{x}={\myvec{2,7.667}}
 \end{equation}
+\begin{lstlisting}
+https://github.com/sssurajit/fwc/blob/main/matrix/circle/codes/scircle.py
+\end{lstlisting}
 
 \section{\textbf{Figure}}
 
@@ -129,7 +136,7 @@ Where\\ $c_1$ is circle having A and B as diameter\\
 \section{\textbf{Code Link}}
 
 \begin{lstlisting}
-https://github.com/sssurajit/fwc/blob/main/line/codes/circle.py
+https://github.com/sssurajit/fwc/blob/main/matrix/circle/codes/circle.py
 \end{lstlisting}
 Execute the code by using the command
 \\ \textbf{python3 circle.py}
