@@ -1,4 +1,4 @@
-.include "/home/jeet/iith/assembly/m328Pdef.inc"
+.include "/sdcard/iith/assembly/m328Pdef.inc"
 
 main:
  ldi r16, 0b00100000 ;identifying output pins 13
