@@ -14,7 +14,7 @@ import subprocess
 import shlex
 #end if
 
-#Rectangle vertices
+#Point A and B
 A = np.array([0,0]) 
 B = np.array([36,15])   
 C = np.array([36,0])
