@@ -14,7 +14,7 @@ frame=single,
 breaklines=true,
 columns=fullflexible
 }
-\thiswatermark{\centering \put(0,-105.0){\includegraphics[scale=0.15]{/sdcard/IITH/vector/fig/logo2.png}} }
+\thiswatermark{\centering \put(0,-105.0){\includegraphics[scale=0.15]{/sdcard/IITH/vector/figs/logo2.png}} }
 \title{\mytitle}
 \title{
 Assignment - Vector
@@ -28,35 +28,19 @@ Assignment - Vector
 Find the distance between the point(0,0) and (36,15).Can you now find the distance between the two towns A and B discussed in Section 7.2
 \section{\textbf{Solution}}
 The distance betwen the points A and B is given
-
-
 \begin{align*}
-       \vec A=\myvec{0 & 0}
-\end{align*}   
-\begin{align*}
-       \Vec B=\myvec{36 & 15}
- \end{align*}
- \begin{align*}
-     \norm{\vec{A}-\vec{B}}
- \end{align*}
-       where 
- \begin{align*}
-     \vec{A}-\vec{B}=\myvec{-36\\-15}
- \end{align*}      
-\begin{align*}
-    \vec d=\sqrt{\myvec{\vec{A}-\vec{B}}^T\myvec{\vec{A}-\vec{B}}}
+&\vec{A}=\myvec{0 & 0} \\ 
+&\Vec{B}=\myvec{36 & 15} \\ 
+&\norm{\vec{A}-\vec{B}}
 \end{align*}
+where
 \begin{align*}
-    \Vec d =\sqrt{\myvec{-36\\-15}{\myvec{-36-15}}}
-\end{align*}
-\begin{align*}
-    \vec d=\sqrt{1296+225}
-\end{align*}
-\begin{align*}
-    \vec d=\sqrt{1521}
-\end{align*}
-\begin{align*}
-    \vec d=39
+&\vec{A}-\vec{B}=\myvec{-36\\-15} \\
+&\vec{d}=\sqrt{\myvec{\vec{A}-\vec{B}}^T\myvec{\vec{A}-\vec{B}}} \\
+&\vec{d} =\sqrt{\myvec{-36\\-15}{\myvec{-36-15}}} \\
+&\vec{d} =\sqrt{1296+225} \\
+&\vec{d} =\sqrt{1521} \\
+&\vec{d}= 39
 \end{align*}
 \section{\textbf{Code Link}}
 \begin{lstlisting}
@@ -66,11 +50,9 @@ Execute the code by using the command\\
 \textbf{python3 vector.py}
 \section{\textbf{Figure}}
 \begin{figure}[!h]
-    \centering
-\includegraphics[width=\columnwidth]{/sdcard/IITH/vector/fig/vec.pdf}
-\captionsetup{labelformat=empty}
+\centering
+\includegraphics[width=\columnwidth]{/sdcard/IITH/vector/figs/vec.pdf}
 \caption{}
 \label{fig:vec}
 \end{figure}
-
 \end{document}
