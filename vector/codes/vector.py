@@ -14,24 +14,31 @@ import subprocess
 import shlex
 #end if
 
+# Coordinates of A and B
+A = np.array([0, 0])
+B = np.array([36, 15])
+# Calculate distance
+d = np.linalg.norm(A - B)
+print(d)
+
 #Point A and B
-A = np.array([0,0]) 
-B = np.array([36,15])   
-C = np.array([36,0])
+I = np.array([0,0]) 
+J = np.array([36,15])   
+K = np.array([36,0])
 
 #Generating all lines
-x_AB = line_gen(A,B)
-x_BC = line_gen(B,C)
-x_CA = line_gen(C,A)
+x_IJ = line_gen(I,J)
+x_JK = line_gen(J,K)
+x_KI = line_gen(K,I)
 
 #Plotting all lines
-plt.plot(x_AB[0,:],x_AB[1,:],color='orange',label='$AB=39$')
-plt.plot(x_BC[0,:],x_BC[1,:],color='gray',linestyle="--")
-plt.plot(x_CA[0,:],x_CA[1,:],color='gray',linestyle="--")
-plt.plot(A[0], A[1], 'o')
-plt.text(A[0] * (1 + 0.1), A[1] * (1 - 0.1) , 'A')
-plt.plot(B[0], B[1], 'o')
-plt.text(B[0] * (1 - 0.2), B[1] * (1) , 'B')
+plt.plot(x_IJ[0,:],x_IJ[1,:],color='orange',label='$AB=39$')
+plt.plot(x_JK[0,:],x_JK[1,:],color='gray',linestyle="--")
+plt.plot(x_KI[0,:],x_KI[1,:],color='gray',linestyle="--")
+plt.plot(I[0], I[1], 'o')
+plt.text(I[0] * (1 + 0.1), I[1] * (1 - 0.1) , 'A')
+plt.plot(J[0], J[1], 'o')
+plt.text(J[0] * (1 - 0.1), J[1] * (1) , 'B')
 
 plt.xlabel('$x$')
 plt.ylabel('$y$')
