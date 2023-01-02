@@ -1,0 +1,76 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{graphicx}
+\graphicspath{{./figs/}}{}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\usepackage{listings}
+\usepackage{watermark}
+\usepackage{titlesec}
+\usepackage{caption}
+\let\vec\mathbf
+\lstset{
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\thiswatermark{\centering \put(0,-105.0){\includegraphics[scale=0.15]{/sdcard/IITH/vector/fig/logo2.png}} }
+\title{\mytitle}
+\title{
+Assignment - Vector
+}
+\author{Surajit Sarkar}
+\begin{document}
+\maketitle
+\tableofcontents
+\bigskip
+\section{\textbf{Problem}}
+Find the distance between the point(0,0) and (36,15).Can you now find the distance between the two towns A and B discussed in Section 7.2
+\section{\textbf{Solution}}
+The distance betwen the points A and B is given
+
+
+\begin{align*}
+       \vec A=\myvec{0 & 0}
+\end{align*}   
+\begin{align*}
+       \Vec B=\myvec{36 & 15}
+ \end{align*}
+ \begin{align*}
+     \norm{\vec{A-B}}
+ \end{align*}
+       where 
+ \begin{align*}
+     \vec {A-B}=\myvec{-36\\-15}
+ \end{align*}      
+\begin{align*}
+    \vec d=\sqrt{\myvec{\vec {A-B}}^T\myvec{\vec {A-B}}}
+\end{align*}
+\begin{align*}
+    \Vec d =\sqrt{\myvec{-36\\-15}{\myvec{-36-15}}}
+\end{align*}
+\begin{align*}
+    \vec d=\sqrt{1296+225}
+\end{align*}
+\begin{align*}
+    \vec d=\sqrt{1521}
+\end{align*}
+\begin{align*}
+    \vec d=39
+\end{align*}
+\section{\textbf{Code Link}}
+\begin{lstlisting}
+https://github.com/sssurajit/fwc/blob/main/vector/codes/vector.py
+\end{lstlisting}
+Execute the code by using the command\\
+\textbf{python3 vector.py}
+\section{\textbf{Figure}}
+\begin{figure}[!h]
+    \centering
+\includegraphics[width=\columnwidth]{/sdcard/IITH/vector/fig/vec.pdf}
+\captionsetup{labelformat=empty}
+\caption{}
+\label{fig:vec}
+\end{figure}
+
+\end{document}
