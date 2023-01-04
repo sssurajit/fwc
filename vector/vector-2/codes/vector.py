@@ -17,8 +17,8 @@ import shlex
 # Coordinates of A and B
 #A = np.array([1, -5])
 #B = np.array([-4, 5])
-# Calculate distance
-#x = np.linalg.norm(B - A)
+# Calculate intersection
+#x =(B - A)
 #print(x)
 
 #Point A and B
