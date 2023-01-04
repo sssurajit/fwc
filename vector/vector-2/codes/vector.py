@@ -14,12 +14,12 @@ import subprocess
 import shlex
 #end if
 
-# Coordinates of A and B
+#Line of A and B
 #A = np.array([1, -5])
 #B = np.array([-4, 5])
-# Calculate intersection
-#x =(B - A)
-#print(x)
+# Calculate x-axis 
+#x = np.linalg.norm(B + A)/2
+print(x)
 
 #Point A and B
 I = np.array([1,-5]) 
