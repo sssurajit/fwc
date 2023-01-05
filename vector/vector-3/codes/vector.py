@@ -21,29 +21,29 @@ import shlex
 #d = np.linalg.norm(A - B)
 #print(d)
 
-#Point A and B
+#1 Point A,B and C
 I = np.array([7,-2]) 
 J = np.array([5,1])   
 K = np.array([3,4])
-
+#2 Point A,B and C
 L = np.array([8,1]) 
 M = np.array([3,-4])   
 N = np.array([2,-5])
 
-#Generating all lines
+#1 Generating all lines
 x_IJ = line_gen(I,J)
 x_JK = line_gen(J,K)
 x_KI = line_gen(K,I)
-
+#2 Generating all lines
 x_LM = line_gen(L,M)
 x_MN = line_gen(M,N)
 x_NL = line_gen(N,L)
 
 
-#Plotting all lines
+#1 Plotting all lines
 plt.plot(x_IJ[0,:],x_IJ[1,:],color='blue')
 plt.plot(x_JK[0,:],x_JK[1,:],color='blue')
-
+#2 Plotting all lines
 plt.plot(x_LM[0,:],x_LM[1,:],color='green')
 plt.plot(x_MN[0,:],x_MN[1,:],color='green')
 
