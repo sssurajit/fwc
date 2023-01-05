@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from numpy import linalg as LA
 import sys
-lib_path = '/home/jeet/iith/matrix/CoordGeo'
+lib_path = '/sdcard/IITH/matrix/CoordGeo'
 sys.path.insert(0,lib_path)
 
 #local import
@@ -47,6 +47,6 @@ plt.grid() # minor
 plt.axis('equal')
 
 #if using termux                        
-plt.savefig('/home/jeet/iith/vector/fig/vec.pdf')                                           
-subprocess.run(shlex.split("xdg-open /home/jeet/iith/vector/fig/vec.pdf")) 
+plt.savefig('/sdcard/IITH/vector/vector-1/fig/vec.pdf')                                           
+subprocess.run(shlex.split("termux-open /sdcard/IITH/vector/vector-1/fig/vec.pdf")) 
 #plt.show()
