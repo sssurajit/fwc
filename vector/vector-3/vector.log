@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.11.21)  6 JAN 2023 06:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.11.21)  11 JAN 2023 06:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -387,39 +387,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--81
 
  []
 
-</sdcard/IITH/vector/vector-3/figs/vec-1.pdf, id=1, 462.52798pt x 346.89601pt>
-File: /sdcard/IITH/vector/vector-3/figs/vec-1.pdf Graphic file (type pdf)
-<use /sdcard/IITH/vector/vector-3/figs/vec-1.pdf>
-Package pdftex.def Info: /sdcard/IITH/vector/vector-3/figs/vec-1.pdf  used on i
-nput line 87.
+<./figs//vec-1.pdf, id=1, 462.52798pt x 346.89601pt>
+File: ./figs//vec-1.pdf Graphic file (type pdf)
+<use ./figs//vec-1.pdf>
+Package pdftex.def Info: ./figs//vec-1.pdf  used on input line 87.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-</sdcard/IITH/vector/vector-3/figs/vec-2.pdf, id=2, 462.52798pt x 346.89601pt>
-File: /sdcard/IITH/vector/vector-3/figs/vec-2.pdf Graphic file (type pdf)
-<use /sdcard/IITH/vector/vector-3/figs/vec-2.pdf>
-Package pdftex.def Info: /sdcard/IITH/vector/vector-3/figs/vec-2.pdf  used on i
-nput line 94.
+<./figs//vec-2.pdf, id=2, 462.52798pt x 346.89601pt>
+File: ./figs//vec-2.pdf Graphic file (type pdf)
+<use ./figs//vec-2.pdf>
+Package pdftex.def Info: ./figs//vec-2.pdf  used on input line 94.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-</sdcard/IITH/vector/vector-3/figs/logo.png, id=3, 475.7775pt x 464.73625pt>
-File: /sdcard/IITH/vector/vector-3/figs/logo.png Graphic file (type png)
-<use /sdcard/IITH/vector/vector-3/figs/logo.png>
-Package pdftex.def Info: /sdcard/IITH/vector/vector-3/figs/logo.png  used on in
-put line 99.
+<./figs//logo.png, id=3, 475.7775pt x 464.73625pt>
+File: ./figs//logo.png Graphic file (type png)
+<use ./figs//logo.png>
+Package pdftex.def Info: ./figs//logo.png  used on input line 99.
 (pdftex.def)             Requested size: 71.36354pt x 69.70743pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
- </sdcard/IITH/vector/vector-3/figs/logo.png> </sdcard/IITH/vector/vector-3/fig
-s/vec-1.pdf>] [2
+ <./figs//logo.png> <./figs//vec-1.pdf>] [2
 
- </sdcard/IITH/vector/vector-3/figs/vec-2.pdf>] (./vector.aux)
+ <./figs//vec-2.pdf>] (./vector.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
  6810 strings out of 479304
- 105513 string characters out of 5869778
- 434571 words of memory out of 5000000
+ 105097 string characters out of 5869778
+ 434537 words of memory out of 5000000
  23941 multiletter control sequences out of 15000+600000
  437189 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -428,17 +424,19 @@ Here is how much of TeX's memory you used:
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on vector.pdf (2 pages, 138912 bytes).
+/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/urw/times/utmr8a.pfb>
+Output written on vector.pdf (2 pages, 155416 bytes).
 PDF statistics:
- 125 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
+ 133 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

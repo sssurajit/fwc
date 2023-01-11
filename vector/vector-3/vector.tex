@@ -16,7 +16,7 @@ frame=single,
 breaklines=true,
 columns=fullflexible
 }
-\thiswatermark{\centering \put(0,-105.0){\includegraphics[scale=0.15]{/sdcard/IITH/vector/vector-3/figs/logo.png}} }
+\thiswatermark{\centering \put(0,-105.0){\includegraphics[scale=0.15]{logo.png}} }
 \title{\mytitle}
 \title{
 Assignment - Vector-3
@@ -41,11 +41,11 @@ In each of the following, find the value of ’k’,\\ for which the points are 
     Then
     \begin{align}
         \myvec{\vec{A}-\vec{B}}&=\myvec{2\\-3}\\
-        \myvec{\vec{A}-\vec{C}}&=\myvec{4\\2k}\
+        \myvec{\vec{A}-\vec{C}}&=\myvec{4\\-2-k}\
     \end{align}
     Forming the collinearity matrix
     \begin{align}
-        \myvec{2&-3\\4&2k} \xleftrightarrow{R_1\rightarrow{R_1-1}}&\myvec{1&-2\\4&2k}\\
+        \myvec{2&-3\\4&2k} \xleftrightarrow{R_2\rightarrow R_2-R_1}&\myvec{2&-3\\0&-k+4}\\
         k&=4
         \end{align}
     
@@ -55,12 +55,12 @@ In each of the following, find the value of ’k’,\\ for which the points are 
     \end{align}
     Then
     \begin{align}
-        \myvec{\vec{A}-\vec{B}}&=\myvec{-8k\\-5}\\
+        \myvec{\vec{A}-\vec{B}}&=\myvec{8-k\\5}\\
         \myvec{\vec{A}-\vec{C}}&=\myvec{6\\6}\
     \end{align}
     Forming the collinearity matrix
     \begin{align}
-        \myvec{-8k&-5\\6&6} \xleftrightarrow{R_1\rightarrow{R_1+8}}&\myvec{k&3\\6&6}\\
+        \myvec{-8k&5\\6&6} \xleftrightarrow[R_2\rightarrow R_2-6R_1]{R_1\rightarrow \frac{R_1}{8-k}}&\myvec{1&\frac{5}{8-k}\\0&6-\frac{30}{8-k}}\\
         k&=3
         \end{align}
 \end{enumerate}
@@ -84,14 +84,14 @@ Execute the code by using the command\\
 \item
 \begin{figure}[!ht]
     \centering
-\includegraphics[width=\columnwidth]{/sdcard/IITH/vector/vector-3/figs/vec-1.pdf}
+\includegraphics[width=\columnwidth]{vec-1.pdf}
 \caption{}
 \label{fig:vec}
 \end{figure}
 \item
 \begin{figure}[!ht]
     \centering
-\includegraphics[width=\columnwidth]{/sdcard/IITH/vector/vector-3/figs/vec-2.pdf}
+\includegraphics[width=\columnwidth]{vec-2.pdf}
 \caption{}
 \label{fig:vec}
 \end{figure}
