@@ -12,7 +12,7 @@ frame=single,
 breaklines=true,
 columns=fullflexible
 }
-\thiswatermark{\centering \put(0,-105.0){\includegraphics[scale=0.2]{iith.png}} }
+\thiswatermark{\centering \put(0,-105.0){\includegraphics[scale=0.15]{iith.png}} }
 
 \title{\mytitle}
 \title{
@@ -31,53 +31,44 @@ Two of its vertices are (-3,1) and (1,1).Find the equation of the other sides.
 
 
 \section{\textbf{Solution}}
+given
+\begin{align}
+     \Vec{A}&=\myvec{-3\\1}\\
+     \Vec{C}&=\myvec{1\\1}
+\end{align}
 The direction of given line
+\begin{align}
+  4\vec{x}&+7\vec{y}+5=0\\
+  \implies& 7\vec{y}=-4\vec{x}-5\\
+  \implies& \vec{y}=\frac{-4}{7}\vec{x}-\frac{5}{7}\\
+   \implies&\vec{L}=\vec{m}=\myvec{1\\{\frac{-4}{7}}}
+\end{align}
+The direction vector of line $\vec{AC}$ 
 \begin{equation}
-    4\vec x+7 \vec y +5=0
+    d_{\vec{AC}}=\vec{A}-\vec{C}=\myvec{-4\\0}
 \end{equation}
-\begin{equation}
-    7\vec y=-4\vec x-5
-\end{equation}
-\begin{equation}
-    \vec y=\frac{-4}{7} \vec x-\frac{5}{7}
-\end{equation}
-\\
-\begin{equation}
-	\vec L =m= \myvec{1\\{\frac{-4}{7}}}
-\end{equation}
-The direction vector of line AC 
-\begin{equation}
-    d_{AC}=A-C=\myvec{-4\\0}
-\end{equation}
-AC is diagonal of the given rectangle between AC and AB
+$\vec{AC}$ is diagonal of the given rectangle between $\vec{AC}$ and $\vec{AB}$
 \\
 
 where
 \\
-\begin{equation}
-    \vec{Cos\theta} = {\frac{m^Td_{AC}}{\|m\|\|m_{AC}\|}}
-\end{equation}
-Vertices for A and B
-\begin{equation}
-	B-A=R_{\theta}{\myvec{C-A}} {\frac{\myvec{A-C}cos \theta}{\|A-C\|}}
-\end{equation}
-\begin{equation}
-    D-A=R_{\frac{\pi}{2}-0} \myvec{C-A} sin\theta
-\end{equation}
+\begin{align}
+    Cos\theta={\frac{\vec{m}^{\top}d_{\vec{AC}}}{\|\vec{m}\|\|\vec {m}_{\vec{AC}}\|}}
+\end{align}
+Vertices for $\vec{A}$ and $\vec{B}$
+\begin{align}
+    \vec{B}-\vec{A}&=R_{\theta}{\myvec{\vec{C}-\vec{A}}} {\frac{\myvec{\vec{A}-\vec{C}}Cos\theta}{\|\vec{A}-\vec{C}\|}}\\
+    \vec{D}-\vec{A}&=R_{\frac{\pi}{2}-0}\myvec{\vec{C}-\vec{A}} Sin\theta
+\end{align}
 where
-\begin{equation}
-    R=\myvec{cos\theta&-sin\theta\\sin\theta&cos\theta}
-\end{equation}
+\begin{align}
+    R=\myvec{Cos\theta&-Sin\theta\\Sin\theta&Cos\theta}
+\end{align}
 \\
-Using python we get the point of B and D
-\begin{lstlisting}
-https://github.com/sssurajit/fwc/blob/main/line/codes/sline.py
-\end{lstlisting}
-
 \section{\textbf{Figure}}
 \begin{figure}[h]
     \centering
-\includegraphics[width=\columnwidth]{fig.jpg}
+    \includegraphics[width=\columnwidth]{fig.jpg}
     \label{fig:my_label}
 \end{figure}
 
@@ -89,8 +80,4 @@ https://github.com/sssurajit/fwc/blob/main/line/codes/line.py
 \end{lstlisting}
 Execute the code by using the command\\
 \textbf{python3 line.py}
-
-
-
 \end{document}
-
