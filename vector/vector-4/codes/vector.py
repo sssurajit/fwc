@@ -31,6 +31,9 @@ plt.text(M[0] * (1 - 0.1), M[1] * (1) , 'B(3,7)')
 
 #Point of intersection
 plt.plot(S[0], S[1], marker='o',color='red')
+plt.text(S[0] * (1 - 0.1), S[1] * (1) , 'P(1:2/9)')
+
+
 
 plt.xlabel('$x$')
 plt.ylabel('$y$')
