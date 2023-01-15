@@ -12,7 +12,7 @@ frame=single,
 breaklines=true,
 columns=fullflexible
 }
-\thiswatermark{\centering \put(0,-105.0){\includegraphics[scale=0.2]{/sdcard/IITH/matrix/circle/figs/logo.png}} }
+\thiswatermark{\centering \put(0,-105.0){\includegraphics[scale=0.15]{logo.png}} }
 \title{\mytitle}
 \title
 {
@@ -35,8 +35,8 @@ Consider a family of circles passing through two fixed points A(3,7) and B(6,5) 
 \end{align}
 Where
 \begin{align}
-    \vec{V}_1&={\myvec{1&0\\0&1}}\\
-    \vec{u}_1&={\myvec{{\frac{-9}{2}}-6}}\\
+    \vec{V}_1&=\myvec{1&0\\0&1}\\
+    \vec{u}_1&=\myvec{\frac{-9}{2}&-6}\\
     f_1&=53
 \end{align}
 Equation of circle with A and B as diameter\\
@@ -44,25 +44,25 @@ Equation of line passing through A and B
 \\ 
 \\Direction vector  
   \begin{align}
-    \vec{m= A-B}
+    \vec{m}=\vec{A}-\vec{B}
 \end{align}
 \\Normal vector
 \begin{align}
-    \vec{n} = \vec{R}_{\frac{\pi}{2}} \myvec{\Vec{m}}
+    \vec{n}=\vec{R}_{\frac{\pi}{2}}\vec{m}
 \end{align}
 where
 \begin{align}
-\vec{R}_{\frac{\pi}{2}} =\myvec{\cos\theta&-\sin\theta\\ \sin\theta&\cos\theta}
+\vec{R}_{\frac{\pi}{2}}=\myvec{\cos\theta&-\sin\theta\\ \sin\theta&\cos\theta}
 \end{align}
 Equation of $L_1$
 \begin{align}
-    \vec{n}^T{\myvec{\vec x-\vec A}}&=0\\
-    \vec {n^T x}-\vec {n^TA}&=0
+    \vec{n}^{\top}\myvec{\vec{x}-\vec{A}}&=0\\
+    \vec{n}^{\top}\vec{x}-\vec{n}^{\top}\vec{A}&=0
 \end{align}
 Given circle
 \begin{align}
-    \vec{{x}^2+{y}^2}-4{\vec x}-6{\vec y}-3&=0\\
-    \vec{x}^{\top}\vec{V}_2\vec{x}+2\vec{u}_2^T\vec{x}+f_2&\\
+    \vec{x}^2+\vec{y}^2-4\vec{x}-6\vec{y}-3&=0\\
+    \vec{x}^{\top}\vec{V}_2\vec{x}+2\vec{u}_2^{\top}\vec{x}+f_2&\\
     \vec{x}^{\top}\myvec{1&0\\0&1}\vec{x}+2\myvec{-2&-3}\vec{x}-3&=0
 \end{align}
 Where
@@ -83,9 +83,9 @@ Where\\ $c_1$ is circle having A and B as diameter\\
 \end{align}
 Using python we get the $L_1$ and intersection point
 \begin{align}
-    \vec{\myvec{2&3}}{\vec x}&=27 ---\myvec{L_1}\\
-    \vec{\myvec{5&6\\2&3}}{\vec x}&={\myvec{56\\27}}\\
-    \vec{x}&={\myvec{2,7.667}}
+    \myvec{2&3}\vec{x}&=27---\myvec{L_1}\\
+    \myvec{5&6\\2&3}\vec{x}&=\myvec{56\\27}\\
+    \vec{x}&=\myvec{2,7.667}
 \end{align}
 \section{\textbf{Code Link}}
 \begin{lstlisting}
@@ -96,7 +96,7 @@ Execute the code by using the command
 \section{\textbf{Figure}}
 \begin{figure}
     \centering
-    \includegraphics[width=\columnwidth]{/sdcard/IITH/matrix/circle/figs/fig.pdf}
+    \includegraphics[width=\columnwidth]{fig.jpg}
     \caption{}
     \label{fig}
 \end{figure}
