@@ -14,7 +14,7 @@ frame=single,
 breaklines=true,
 columns=fullflexible
 }
-\thiswatermark{\centering \put(0,-105.0){\includegraphics[scale=0.15]{/sdcard/IITH/vector/vector-4/figs/logo.png}} }
+\thiswatermark{\centering \put(0,-105.0){\includegraphics[scale=0.15]{/sdcard/IITH/vector/vectpr-4/figs/logo.png}} }
 \title{\mytitle}
 \title{
 Assignment - Vector-4
@@ -22,30 +22,23 @@ Assignment - Vector-4
 \author{Surajit Sarkar}
 \begin{document}
 \maketitle
-\tableofcontents
+%\tableofcontents
 \bigskip
 \section{\textbf{Problem}}
 Determine the ratio in which the line 2x+y–4=0 divides the line segment joining the points A(2,–2) and B(3,7).
 \section{\textbf{Solution}}
 \begin{table}[h]
     \centering
-    \begin{tabular}{|c|c|c|}
+    \begin{tabular}{|c|c|}
        \hline
        \textbf{Symbol}&\textbf{Value}  \\
        \hline
-	    $\vec{A}$ & $\myvec{
-		    2\\
-		    -2}$
-	    \\
+	    $\vec{A}$ & $\myvec{2\\-2}$\\
         \hline
-	    $\vec{B}$ & $\myvec{3\\7}$
- \\
+	    $\vec{B}$ & $\myvec{3\\7}$\\
         \hline
-	    c & $4$
- \\
-       \hline
-            $\vec{P}$ & $\frac{k\vec{B+A}}{k+1}$\\
-       \hline
+	    c&$4$\\
+        \hline
        $\vec{n}$ & $\myvec{2\\1}$\\
        \hline
     \end{tabular}
@@ -54,20 +47,19 @@ Determine the ratio in which the line 2x+y–4=0 divides the line segment joinin
 \end{table}
 Given equation
 \begin{align}
-    \myvec{2\\1}^{\top}\vec{x}-4=0
-\end{align}
-using section formula\\Let the ratio be k:1
-\begin{align}
-    &\vec{n}^{\top}\vec{P}=c\\
-    \implies&\vec{n}^{\top}\myvec{\frac{k\vec{B+A}}{k+1}}=c\\
-    \implies&\vec{n}^{\top}\myvec{k\vec{B+A}}=c\myvec{k+1}\\
-     \implies&\vec{n}^{\top}k\vec{B}+\vec{n}^{\top}\vec{A}=c\myvec{k+1}\\
-     \implies&k\vec{n}^{\top}\vec{B}+\vec{n}^{\top}\vec{A}=c\myvec{k+1}\\
-    \implies& k\vec{n}^{\top}\vec{B}-ck=-\vec{n}^{\top}\vec{A}+c\\
-     \implies&k\myvec{\vec{n}^{\top}\vec{B}-c}=c-\vec{n}^{\top}\vec{A}\\
-    \implies& k=\frac{c-\vec{n}^{\top}\vec{A}}{\vec{n}^{\top}\vec{B}-c}\\
-    \implies& k=\frac{4-2}{13-4}\\
-   \implies& k=\frac{2}{9}
+    \myvec{2&1}\vec{x}&=4\\
+    \text{Using section formula}\\
+    \text{Let the ratio be k:1}\\
+    \vec{n}^{\top}\vec{P}&=c\\
+    \implies\vec{n}^{\top}\myvec{\frac{k\vec{B+A}}{k+1}}&=c\\
+    \implies\vec{n}^{\top}\myvec{k\vec{B+A}}&=c\myvec{k+1}\\
+    \implies\vec{n}^{\top}k\vec{B}+\vec{n}^{\top}\vec{A}&=c\myvec{k+1}\\
+    \implies k\vec{n}^{\top}\vec{B}+\vec{n}^{\top}\vec{A}&=c\myvec{k+1}\\
+    \implies k\vec{n}^{\top}\vec{B}-ck&=-\vec{n}^{\top}\vec{A}+c\\
+    \implies k\myvec{\vec{n}^{\top}\vec{B}-c}&=c-\vec{n}^{\top}\vec{A}\\
+    \implies k&=\frac{c-\vec{n}^{\top}\vec{A}}{\vec{n}^{\top}\vec{B}-c}\\
+    \implies k&=\frac{4-2}{13-4}\\
+    \implies k&=\frac{2}{9}
 \end{align}
 \section{\textbf{Code Link}}
 \begin{lstlisting}
@@ -78,10 +70,9 @@ Execute the code by using the command\\
 \section{\textbf{Figure}}
 \begin{figure}[!h]
 \centering
-\includegraphics[width=\columnwidth]{/sdcard/IITH/vector/vector-4/figs/vec.pdf}
+\includegraphics[width=\columnwidth]{/sdcard/IITH/vector/vectpr-4/figs/vec.pdf}
 \caption{}
 \label{fig:vec}
 \end{figure}
 \end{document}
-
 
