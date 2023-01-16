@@ -1,0 +1,108 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{graphicx}
+\graphicspath{{./figs/}}{}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\usepackage{listings}
+\usepackage{watermark}
+\usepackage{titlesec}
+\usepackage{caption}
+\let\vec\mathbf
+\lstset{
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\thiswatermark{\centering \put(0,-105.0){\includegraphics[scale=0.15]{/sdcard/IITH/vector/vector-4/figs/logo.png}} }
+\title{\mytitle}
+\title{
+Assignment - Vector-4
+}
+\author{Surajit Sarkar}
+\begin{document}
+\maketitle
+\tableofcontents
+\bigskip
+\section{\textbf{Problem}}
+Determine the ratio in which the line 2x+y–4=0 divides the line segment joining the points A(2,–2) and B(3,7).
+\section{\textbf{Solution}}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|}
+       \hline
+       \textbf{Symbol}&\textbf{Value}  \\
+       \hline
+	    $\vec{A}$ & $\myvec{
+		    2\\
+		    -2}$
+	    \\
+        \hline
+	    $\vec{B}$ & $\myvec{3\\7}$
+ \\
+        \hline
+	    $\vec{C}$ & $4$
+ \\
+       \hline
+            $\vec{P}$ & $\frac{k\vec{B+A}}{k+1}$\\
+       \hline
+       $\vec{n}^T$ & $\myvec{2&1}$\\
+       \hline
+    \end{tabular}
+    \caption{Parameters}
+    \label{tab:my_label}
+\end{table}
+Given equation
+\begin{align}
+    2\vec{x}+\vec{y}-4=0
+\end{align}
+using section formula\\Let the ratio be k:1
+\begin{align}
+    \vec{n}^T\vec{P}&=\vec{C}\\
+    \vec{n}^T\myvec{\frac{k\vec{B+A}}{k+1}}&=\vec{C}\\
+    \vec{n}^T\myvec{k\vec{B+A}}&=\vec{C}\myvec{k+1}\\
+    \vec{n}^Tk\vec{B}+\vec{n}^T\vec{A}&=\vec{C}\myvec{k+1}\\
+    k\vec{n}^T\vec{B}+\vec{n}^T\vec{A}&=\vec{C}\myvec{k+1}\\
+    k\myvec{2&1}\myvec{3\\7}+\myvec{2&1}\myvec{2\\-2}&=4\myvec{k+1}\\
+    13k+2&=4k+4\\
+    9k&=2\\
+    k&=\frac{2}{9}
+\end{align}
+\section{\textbf{Code Link}}
+\begin{lstlisting}
+https://github.com/sssurajit/fwc/blob/main/vector/vector-4/codes/vector.py
+\end{lstlisting}
+Execute the code by using the command\\
+\textbf{python3 vector.py}
+\section{\textbf{Figure}}
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.9\columnwidth]{/sdcard/IITH/vector/vector-4/figs/vec.pdf}
+\caption{}
+\label{fig:vec}
+\end{figure}
+\end{document}
+
+t/fwc/blob/main/vector/vector-3/codes/vector-2.py
+\end{lstlisting}
+Execute the code by using the command\\
+\textbf{python3 vector-2.py}\\
+\end{enumerate}
+\section{\textbf{Figure}}
+\begin{enumerate}[label=(\roman*)]
+\item
+\begin{figure}[!ht]
+    \centering
+\includegraphics[width=\columnwidth]{vec-1.pdf}
+\caption{}
+\label{fig:vec}
+\end{figure}
+\item
+\begin{figure}[!ht]
+    \centering
+\includegraphics[width=\columnwidth]{vec-2.pdf}
+\caption{}
+\label{fig:vec}
+\end{figure}
+\end{enumerate}
+\end{document}
