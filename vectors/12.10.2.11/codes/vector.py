@@ -11,9 +11,17 @@ import subprocess
 import shlex
 #end if
 
-#1 Point A,B and C
+#Rank of the Matrix
+my_matrix = np.array([[2 ,-3 ,4], [-4, 6, -8    ]])
+print("Matrix")
+for row in my_matrix:
+  print(row)
+rank = np.linalg.matrix_rank(my_matrix)
+print("Rank of the Matrix is : ",rank)
+
+#1 Point
 I = np.array([-1.5,0]) 
-J = np.array([0,0])   
+J = np.array([1,0])   
 K = np.array([2,0])
 #1 Generating all lines
 x_IJ = line_gen(I,J)
