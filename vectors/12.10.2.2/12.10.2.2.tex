@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\graphicspath{{./figs/}}{}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\usepackage{listings}
+\usepackage{watermark}
+\usepackage{titlesec}
+\usepackage{caption}
+\let\vec\mathbf
+\lstset{
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\thiswatermark{\centering \put(0,-105.0){\includegraphics[scale=0.15]{logo.png}} }
+\title{\mytitle}
+\title{
+Assignment - 12.10.2.2
+}
+\author{Surajit Sarkar}
+\begin{document}
+\maketitle
+\tableofcontents
+\bigskip
+\section{\textbf{Problem}}
+Write two different vectors having same\\ magnitude
+\section{\textbf{Solution}}
+\begin{align}
+\text{Cosider}\\
+\overrightarrow{a} &=2\hat{i}+3\hat{j}+k \\ 
+\overrightarrow{b}&=3\hat{i}+2\hat{j}-k\\ 
+\end{align}
+\begin{enumerate}
+    \item 
+\begin{align}
+\|\vec{A}\|=|\overrightarrow{\vec{A}}|&=\sqrt{\vec{A}^{\top}\vec{A}} \\
+&=\sqrt{\myvec{2&3&1}\myvec{2\\3\\1}}\\
+&=\sqrt{4+9+1}\\
+&=\sqrt{14}
+\end{align}
+\item
+\begin{align}
+\|\vec{B}\|=|\overrightarrow{\vec{B}}|&=\sqrt{\vec{B}^{\top}\vec{B}} \\
+&=\sqrt{\myvec{3&2&(-1)}\myvec{3\\2\\(-1)}}\\
+&=\sqrt{4+9+1}\\
+&=\sqrt{14}
+\end{align}
+\end{enumerate}
+\end{document}
+
