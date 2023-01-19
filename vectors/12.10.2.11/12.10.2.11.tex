@@ -1,4 +1,4 @@
-\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\documentclass[12pt]{article}
 \usepackage{graphicx}
 \graphicspath{{./figs/}}{}
 \usepackage{amsmath,amssymb,amsfonts,amsthm}
@@ -31,29 +31,21 @@ Show that the vectors $2\hat{i}+3\hat{j}+4\hat{k}$ and $-4\hat{i}+6\hat{j}-8\hat
 \section{\textbf{Solution}}
 given
 \begin{align}
-	\vec{A}=\myvec{2\\3\\4}
-	\vec{B}=\myvec{-4\\6\\-8}
-\end{align}
-\begin{align}
-    \myvec{\vec{A}^{\top}\\ \vec{B}^{\top}}=1\\
-\myvec{\vec{A}^{\top}\\ \vec{B}^{\top}}=\myvec{2&-3&4\\-4&6&-8}\\
-\text{Forming the collinearity matrix}\\
-\myvec{2&-3&4\\-4&6&-8} \xleftrightarrow{\frac{1}{2}R_1\to R_1}\myvec{1&-\frac{3}{2}&2\\-4&6&-8}\\
-\xleftrightarrow{-\frac{1}{4}R_2\to R_2}\myvec{1&-\frac{3}{2}&2\\1&\frac{3}{2}&2}\\
-\xleftrightarrow{R_2-1R_1\to R_2}\myvec{1&-\frac{3}{2}&2\\0&0&0}
+	\vec{A}&=\myvec{2\\3\\4}\\
+	\vec{B}&=\myvec{-4\\6\\-8}\\
+        \myvec{\vec{A}^{\top}\\ \vec{B}^{\top}}=\myvec{2&-3&4\\-4&6&-8}\\
+        \text{Forming the collinearity matrix}\\
+        \myvec{2&-3&4\\-4&6&-8} \xleftrightarrow{\frac{1}{2}R_1\to R_1}\myvec{1&-\frac{3}{2}&2\\-4&6&-8}\\
+        \xleftrightarrow{-\frac{1}{4}R_2\leftarrow R_2}\myvec{1&-\frac{3}{2}&2\\1&\frac{3}{2}&2}\\
+        \xleftrightarrow{R_2-1R_1\to R_2}\myvec{1&-\frac{3}{2}&2\\0&0&0}
 \end{align}
 There is 1 nonzero in the row echelon form of the matrix,so the rank is 1 .
 if rank of the matrix is 1 then the vectors are collinear
+\section{\textbf{Code Link}}
 \begin{lstlisting}
 https://github.com/sssurajit/fwc/blob/main/vectors/12.10.2.11/codes/vector.py
 \end{lstlisting}
 Execute the code by using the command\\
 \textbf{python3 vector.py}
-\section{\textbf{Figure}}
-\begin{figure}[!ht]
-    \centering
-\includegraphics[width=\columnwidth]{/sdcard/IITH/vectors/12.10.2.11/figs/fig.pdf}
-\caption{}
-\label{fig:vec}
-\end{figure}
+
 \end{document}
