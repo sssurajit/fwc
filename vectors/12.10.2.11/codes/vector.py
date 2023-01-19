@@ -1,7 +1,7 @@
 import numpy as np
 
 #Rank of the Matrix
-my_matrix = np.array([[2 ,-3 ,4], [-4, 6, -8    ]])
+my_matrix = np.array([[2 ,-3 ,4], [-4, 6, -8]])
 print("Matrix")
 for row in my_matrix:
   print(row)
