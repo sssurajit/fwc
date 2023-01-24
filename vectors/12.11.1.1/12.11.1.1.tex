@@ -1,0 +1,63 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{graphicx}
+\graphicspath{{./figs/}}{}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\usepackage{listings}
+\usepackage{watermark}
+\usepackage{titlesec}
+\usepackage{caption}
+\usepackage{gensymb}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\let\vec\mathbf
+\lstset{
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\thiswatermark{\centering \put(0,-105.0){\includegraphics[scale=0.15]{/sdcard/IITH/vectors/12.11.1.1/figs/logo.png}} }
+\title{\mytitle}
+\title{
+Assignment - 12.11.1.1
+}
+\author{Surajit Sarkar}
+\begin{document}
+\maketitle
+\tableofcontents
+\bigskip
+\section{\textbf{Problem}}
+If a line makes angles $90^{\circ},135^{\circ},45^{\circ}$ with x,y and z-axis respectivly. Find its direction cosines.
+\section{\textbf{Solution}}
+let
+\begin{align}
+\vec{A}=\myvec{90^{\circ}\\135^{\circ}\\45^{\circ}}=\myvec{0\\-\frac{1}{\sqrt{2}}\\ \frac{1}{\sqrt{2}}}
+\end{align}
+The Directional vector of x,y and z-axis are respectivly as
+\begin{align}
+\vec{e}_1=\myvec{1\\0\\0},\vec{e}_2=\myvec{0\\1\\0},\vec{e}_3=\myvec{0\\0\\1},
+\end{align}
+\begin{align}
+\norm{\vec{A}}&=\sqrt{\myvec{0&-\frac{1}{\sqrt{2}}&\frac{1}{\sqrt{2}}}\myvec{0\\-\frac{1}{\sqrt{2}}\\\frac{1}{\sqrt{2}}}}\\
+&=1
+\end{align}
+The Direction cosines of vector $\vec{A}$ are
+\begin{align}
+\cos\theta_1&=\myvec{0&-\frac{1}{\sqrt{2}}&\frac{1}{\sqrt{2}}}\myvec{1\\0\\0}\\
+&=0
+\end{align}
+\begin{align}
+\cos\theta_2&=\myvec{0&-\frac{1}{\sqrt{2}}&\frac{1}{\sqrt{2}}}\myvec{0\\1\\0}\\
+&=-\frac{1}{\sqrt{2}}
+\end{align}
+\begin{align}
+\cos\theta_3&=\myvec{0&-\frac{1}{\sqrt{2}}&\frac{1}{\sqrt{2}}}\myvec{0\\0\\1}\\
+&=\frac{1}{\sqrt{2}}
+\end{align}
+\begin{lstlisting}
+https://github.com/sssurajit/fwc/blob/main/vectors/12.11.1.1/codes/code.py
+\end{lstlisting}
+Execute the code by using the command\\
+\textbf{python3 code.py}
+\end{document}
+
