@@ -5,6 +5,6 @@ b = np.array([2,1])
 
 X = np.cross((a-b),(a+b))
 Y = 2*(np.cross(a,b))
-print("RHS :",X)
-print("LHS :",Y)
+print("LHS :",X)
+print("RHS :",Y)
 
